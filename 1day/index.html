@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 2. 비동기 처리 (병렬 처리) -->
+    <!-- 단점: 순서의 정리가 안됨 -->
+    <!-- <script async src="./index.js"></script> -->
+
+    <!-- 3. 비동기 처리 (병렬 처리, 순서 보장)-->
+    <!-- 위에서 순차적으로 순서를 정리해서 실행  -->
+    <!-- HTML파일이 다 다운 될 떄까지 기다렸다 JS파일이 실행됨 -->
+    <script defer src="./1.js"></script>
+  </head>
+
+  <body>
+    <!-- 1. HTML이 다 파싱 되고 나서 실행 -->
+    <!-- 단점: 느림 -->
+    <!-- <script src="./index.js"></script> -->
+  </body>
+</html>
