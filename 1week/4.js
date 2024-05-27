@@ -82,6 +82,6 @@ let sum = 0;
 for (let i = 100; i < 1000; i++) {
   strNum = String(i);
   sum =
-    Number(strNum[0]) ** 3 + Number(strNum[1]) ** 3 + Number(strNum[2] ** 3);
+    Number(strNum[0]) ** 3 + Number(strNum[1]) ** 3 + Number(strNum[2]) ** 3;
   if (i === sum) console.log(strNum);
 }
