@@ -44,6 +44,11 @@ class Rectangle extends Shape {
   getArea() {
     return this.width * this.height;
   }
+
+  getColor() {
+    // 오버라이딩 : 상속 받은 값을 재정리
+    return `사각형은 ${this.color}색 입니다.`;
+  }
 }
 
 const rect2 = new Rectangle("blue", 10, 20);
