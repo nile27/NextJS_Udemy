@@ -88,13 +88,13 @@
 
 async function getApple() {
   // throw new Error("err");
-  await delay(2000);
+
   return "🍎";
 }
 
 async function getBanana() {
   // throw new Error("err");
-  await delay(2000);
+
   return "banana";
 }
 
