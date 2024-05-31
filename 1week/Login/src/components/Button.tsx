@@ -1,7 +1,8 @@
 type TButtonProps = React.ComponentProps<"button"> & {
-  type: "submit";
-  color: string;
+  type: "submit" | "button";
+  color?: string;
   children: React.ReactNode;
+  onClick?: () => void;
 };
 
 const Button = (props: TButtonProps) => {
