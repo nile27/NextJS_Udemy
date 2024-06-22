@@ -15,7 +15,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const posts = await (await fetch("http://localhost:4000/post")).json();
+  
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -25,7 +25,7 @@ export default async function RootLayout({
           <Link href={"/blog/1"}>blog 1</Link>
           <Link href={"/blog/2"}>blog 2</Link>
         </nav>
-        <pre>{JSON.stringify(posts, null, 2)}</pre>
+       
         <main>{children}</main>
       </body>
     </html>
